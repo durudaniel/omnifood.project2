@@ -125,7 +125,8 @@ body {
 }
 .hero {
   margin: auto 10rem;
-  max-width: 130rem;
+  padding: 0 3.6rem;
+  width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
@@ -153,8 +154,8 @@ body {
 }
 
 .delivered-img img {
-  max-height: 4.8rem;
-  max-width: 4.8rem;
+  height: 4.8rem;
+  width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
   border: 3px solid #f8d8bd;
@@ -177,10 +178,10 @@ body {
 /***********************/
 .section-how {
   padding: 9.6px 0;
-  background-color: orangered;
 }
 
 .container {
+  padding: 0 3.6rem;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -199,22 +200,4 @@ body {
 
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.section-how div:nth-child(1) {
-  background-color: aqua;
-}
-
-.section-how div:nth-child(2) {
-  background-color: blue;
-}
-.section-how div:nth-child(3) {
-  background-color: violet;
-}
-.section-how div:nth-child(4) {
-  background-color: yellow;
 }
