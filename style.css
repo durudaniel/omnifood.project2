@@ -28,24 +28,53 @@ body {
 
 .grid {
   display: grid;
+  column-gap: 9.6rem;
   gap: 9.6rem;
 }
 
-.grid--2-cols {
+.grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
-
+.grid--center-v {
+  align-items: center;
+}
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.heading-primary,
+.heading-primary,
+.heading-tertiary {
+  font-weight: 600;
+  color: #333;
+  /*color: #343a40*/
+  letter-spacing: -0.5px;
+}
 .heading-primary {
   font-size: 4.5rem;
-  font-weight: 600;
   line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 1px;
 }
 
 .btn:link,
@@ -144,22 +173,22 @@ body {
   padding: 4.6rem 0 9.6rem 0;
 }
 .hero {
-  margin: auto 10rem;
+  margin: 0 5rem;
   padding: 0 3.6rem;
-  width: 130rem;
+  max-width: 150rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
 }
+
 .hero-description {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
 }
 .hero-img {
-  width: 80%;
-  height: 500px;
+  width: 70%;
 }
 
 .delivered-meals {
@@ -198,5 +227,56 @@ body {
 /***********************/
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
+}
+
+.step-number {
+  font-size: 8.8rem;
+  font-weight: 600;
+  color: #ced4da;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box::before {
+  content: "";
+  display: block;
+  /*height: 60%;*/
+  border-radius: 50%;
+  /*60 % of parent's width*/
+  padding-bottom: 60%;
+  width: 65%;
+  background-color: #fdf2e9;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  /* z-index is usED to push elements back to there position*/
+  z-index: -1;
+}
+
+.step-img-box::after {
+  content: "";
+  display: block;
+  width: 52%;
+  padding-bottom: 55%;
+  background-color: #f8d8bd;
+
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.step-img {
+  width: 40%;
+  border-radius: 4rem;
 }
