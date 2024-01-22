@@ -10,6 +10,15 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>MainOmnifood</title>
   </head>
   <body>
@@ -226,9 +235,20 @@
             <span class="tag">vegeterian</span>
             <p class="meal-title">Japanese gyozas</p>
             <ul class="meals-attributes">
-              <li class="meal-attr">650 Calories</li>
-              <li class="meal-attr">NutriScore &reg; 74</li>
-              <li class="meal-attr">4.9 Ratings (706)</li>
+              <li class="meal-attr">
+                <ion-icon name="flame-outline"></ion-icon>
+                <span>650 Calories</span>
+              </li>
+              <li class="meal-attr">
+                <ion-icon name="restaurant-outline"></ion-icon
+                ><span>NutriScore &reg; 74</span>
+              </li>
+              <li class="meal-attr">
+                <span
+                  ><ion-icon name="star-outline"></ion-icon>4.9 Ratings
+                  (706)</span
+                >
+              </li>
             </ul>
           </div>
           <div class="meals">meals</div>
