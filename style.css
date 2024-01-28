@@ -307,7 +307,7 @@ body {
 }
 
 /***********************/
-/* THE HOW IT WORKS SECTION */
+/* MEALS SECTION */
 /***********************/
 .section-meal {
   padding: 9.6rem 0;
@@ -437,3 +437,60 @@ strong {
   text-align: center;
 }
 /**********************/
+
+/***********************/
+/* TESTIMONIALS SECTION */
+/***********************/
+.section-testimonial {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 8rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.Testimonial-img {
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #736f6f;
+}
+
+.gallary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallary-item {
+  overflow: hidden;
+}
+.gallary-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallary-item img:hover {
+  transform: scale(1.1);
+}
