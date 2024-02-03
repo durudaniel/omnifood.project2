@@ -502,6 +502,12 @@ strong {
   padding: 9.6rem 0;
 }
 
+.pricing-plan {
+  background-color: #fdf2e9;
+  border-radius: 11px;
+  padding: 4.8rem;
+}
+
 .plan-name {
   font-size: 2rem;
   font-weight: 600;
@@ -514,6 +520,12 @@ strong {
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
+}
+
+p .dollar {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .plan-price span {
