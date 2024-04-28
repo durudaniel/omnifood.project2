@@ -28,7 +28,7 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 9.6rem;
+  column-gap: 6.4rem;
   gap: 9.6rem;
 
   margin-bottom: 9.6rem;
@@ -140,13 +140,13 @@ body {
   height: 2.2rem;
 }
 /***********************/
-/* HEADER*/
+/* NAVIGATOR*/
 /***********************/
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 4.8rem;
   font-size: 1.9rem;
   color: #444;
 }
@@ -173,6 +173,13 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
+/* MOBILE NAV*/
+.btn-mobile-nav {
+}
+.icon-mobile-nav {
+}
+
 /***********************/
 /* HERO SECTION */
 /***********************/
@@ -182,7 +189,6 @@ body {
 }
 .hero {
   margin: 0 5rem;
-  padding: 0 3.6rem;
   max-width: 150rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -414,6 +420,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .all-recipe {
