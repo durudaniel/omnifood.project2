@@ -23,11 +23,13 @@
   </head>
   <body>
     <header class="header">
-      <img
-        src="c:\Users\Chiemela\Pictures\omnifood-logo (1).png"
-        class="logo"
-        alt="omnifood logo"
-      />
+      <a href="#">
+        <img
+          src="c:\Users\Chiemela\Pictures\omnifood-logo (1).png"
+          class="logo"
+          alt="omnifood logo"
+        />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">How it works</a></li>
@@ -589,23 +591,39 @@
                 first meals is on us!
               </p>
 
-              <form class="cta-text" action="#">
-                <label for="full-name">Full name</label>
-                <input id="full-name" type="text" placeholder="dan chemmzy" />
-                <label for="email">email address</label>
-                <input id="email" type="email" placeholder="email@gmail.com" />
-                <button class="btn">sign up now</button>
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="dan chemmzy"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="email@gmail.com"
+                    required
+                  />
+                </div>
 
-                <label id="select-where">Where did you hear about us</label>
-                <select id="select-where">
-                  <option value="Friends">Friends and Family</option>
-                  <option value="YouTube">YouTube</option>
-                  <option value="Podcast">Podcast</option>
-                  <option value="Facebook Ads">Facebook Ads</option>
-                  <option value="others">
-                   Others
-                  </option>
-                </select>
+                <div>
+                  <label id="select-where">Where did you hear about us</label>
+                  <select id="select-where" required>
+                    <option value="">Pls choose one Opt:</option>
+                    <option value="Friends">Friends and Family</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="Facebook Ads">Facebook Ads</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">sign up now</button>
               </form>
             </div>
             <div
@@ -617,5 +635,81 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid grid--5-cols">
+        <div class="logo-col">
+          <a class="footer-logo" href="#">
+            <img
+              src="c:\Users\Chiemela\Pictures\omnifood-logo (1).png"
+              class="logo"
+              alt="omnifood logo"
+            />
+          </a>
+
+          <ul class="social-link">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            copyright &copy; 2030 by omnifood, inc. All right reserved
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="contact-referral">contact us</p>
+          <address class="contact-address">
+            <p class="address">
+              623 Harrison st., 2nd Floor, san Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:081-402-71-529"
+                >081-402-71-529</a
+              >
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Accounts</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign up</a></li>
+            <li><a class="footer-link" href="#">IOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">recipe dictionary</a></li>
+            <li><a class="footer-link" href="#">Help Center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
