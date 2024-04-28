@@ -1,0 +1,25 @@
+/*******************************
+CONVERTING PX TO REM OR EM(16px=1rem=1em
+to get the rem or em you divide th actual number of
+pixel by 16px 
+*******************************/
+/*******************************
+BELOW 1300px (smaller desktop)
+*******************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/********************************
+BELOW 1200px (land scape tablets)
+********************************/
+@media (max-width: 75em) {
+}
