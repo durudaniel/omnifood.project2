@@ -167,7 +167,7 @@ BELOW 940(mini tablet)
   }
 }
 
-@media (max-width: 44em) {
+@media (max-width: 52em) {
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -203,5 +203,77 @@ BELOW 940(mini tablet)
   .btn--full:visited {
     font-size: 1.5rem;
     padding: 1.2rem 2.4rem;
+  }
+}
+
+@media (max-width: 36em) {
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid-2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+  .logo img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.9rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallary {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .btn--full:link,
+  .btn--full:visited {
+    font-size: 2rem;
+    padding: 2.4rem 3.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-image-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 1.2rem 3.2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .cta-text-box {
+    padding: 1.2rem 2rem;
   }
 }
