@@ -314,7 +314,7 @@ name="reorder-four-outline"
   border-radius: 50%;
   /*60 % of parent's width*/
   padding-bottom: 60%;
-  width: 65%;
+  width: 70%;
   background-color: #fdf2e9;
 
   position: absolute;
@@ -327,7 +327,7 @@ name="reorder-four-outline"
 .step-img-box::after {
   content: "";
   display: block;
-  width: 52%;
+  width: 56%;
   padding-bottom: 55%;
   background-color: #f8d8bd;
 
@@ -337,8 +337,8 @@ name="reorder-four-outline"
 }
 
 .step-img {
-  width: 40%;
-  border-radius: 4rem;
+  width: 50%;
+  height: 40%;
 }
 
 /***********************/
