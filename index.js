@@ -9,11 +9,48 @@ console.log(h1);
 });*/
 
 /*setting current date on website*/
+//////////////////////////////////////////
 const yearElement = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
+/////////////////////////////////////////
 
 /*making mobile navigation work*/
+/////////////////////////////////////////
+const buttonNav = document.querySelector(".btn-mobile-nav");
+const headerElement = document.querySelector(".header");
+buttonNav.addEventListener("click", function () {
+  headerElement.classList.toggle("nav-open");
+});
+/////////////////////////////////////////////
+/// smooth scrolling animation
+/////////////////////////////////////////
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const getHrefAttribute = link.getAttribute("href");
+
+    /*making it to scroll back to the top */
+    if (getHrefAttribute === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    /////////////////////
+    // scroll to other links
+
+    if (getHrefAttribute !== "#" && getHrefAttribute.startsWith("#")) {
+      const sectionElement = document.querySelector(getHrefAttribute);
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  //////////////////////////////////////
+  // closing the mobile navigator
+});
+///////////////////////////////////////////////
 
 function checkFlexGap() {
   var flex = document.createElement("div");

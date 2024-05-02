@@ -9,6 +9,12 @@ tint #fdf2e9
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /**********************
+  it does not work on safari
+
+  scroll-behavior: smooth;
+  ********************/
 }
 
 body {
