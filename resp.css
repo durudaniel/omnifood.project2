@@ -108,7 +108,9 @@ BELOW 940(mini tablet)
   MOBILE NAVIGATION
   ************************/
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
@@ -296,5 +298,57 @@ BELOW 940(mini tablet)
   .btn:visited {
     font-size: 1.8rem;
     /*padding: 1.4rem 1.3rem;*/
+  }
+}
+
+/**************************************
+FIXING FLEX BOX GAP IN BROWSERS/SAFARI
+*************************************/
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-img {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap.meals-attributes:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meals-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-link li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
   }
 }

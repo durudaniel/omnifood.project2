@@ -45,11 +45,36 @@ allLinks.forEach(function (link) {
       const sectionElement = document.querySelector(getHrefAttribute);
       sectionElement.scrollIntoView({ behavior: "smooth" });
     }
-  });
 
-  //////////////////////////////////////
-  // closing the mobile navigator
+    //////////////////////////////////////
+    // closing the mobile navigator
+
+    if (link.classList.contains("main-nav-link"))
+      headerElement.classList.toggle("nav-open");
+  });
 });
+
+const sectionHeroELement = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+    console.log(entry);
+    if (entry.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    if (entry.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    /*IN the viewport*/
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroELement);
 ///////////////////////////////////////////////
 
 function checkFlexGap() {
